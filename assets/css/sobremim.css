@@ -1,0 +1,13 @@
+.sobre-mim-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 64rem;
+}
+
+.sobre-mim-content p {
+    line-height: var(--gap);
+    margin-bottom: var(--gap);
+}
+

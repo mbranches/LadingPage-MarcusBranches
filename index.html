@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Branches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="para fechar menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Fechar Menu"></label>
+
+    <nav class="menu">
+        <div class="main-content menu-content">
+            <h1>
+                <a href="#">Marcus</a>
+                <a href="#">Branches</a>
+            </h1>
+            <ul onclick="getElementById('close-menu').checked = false">
+                <li>
+                    <a href="#intro">Introdução</a>
+                </li>
+                <li>
+                    <a href="#sobre-mim">Sobre Mim</a>
+                </li>    
+                <li>
+                    <a href="#curiosidades">Curiosidades</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h1>Introdução</h1>
+                <p>Estou criando essa Lading Page com o intuito de treinar o meu HTML e o meu CSS. Aqui irei abordar algumas coisas sobre mim, tais como um pouco da minha história na programação e curiosidades, também deixarei minhas redes sociais para que possam chegar até mim.</p>
+            </div>
+            <div class="intro-image"><img src="/assets/img/intro-image.svg" alt="Boneco jogando bola"></div>
+        </div>
+    </section>
+
+
+    <section id="sobre-mim" class="secondary-bg section">
+        <div class="main-content sobre-mim-content">
+            <h1>Sobre Mim</h1>
+            <p>Meu nome é Marcus Vinicius Lima Branches, nasci em Belém do Pará no ano de 2007, possuo 17 anos. Minha mãe se chama Helenice Lima Branches, meu pai se chama Marcelo Viana Branches. Até o ensino médio nunca quis saber de estudar, entretanto na 1ª série vi que o futuro dependia de meus estudos e criei um um rumo na vida.</p>
+            <p>Sempre gostei de tecnologia e como não tinha nem uma área em específica que me interessava sempre me imaginei por esses caminhos, no ententando nunca havia pesquisado muito sobre. Até que no inicio do ano de 2024 um amigo do meu irmão que ja trabalhava como desenvolvedor me indicou a começar estudar lógica de progamação e em seguida HTML e CSS, e assim fiz.</p>
+            <p>No início, fiquei muito perdido e logo desisti. No fim do ano me bateu a vontade de tentar de novo, e, de novo comecei. Início de 2025 e aqui estou, creio que foi a melhor decisão que pude tomar, pois em pouco logo ingressarei na Universidade e quanto mais coisas eu puder adiantar melhor.</p>
+        </div>
+    </section>
+
+
+    <section id="curiosidades" class="main-bg section">
+        <div class="main-content curiosidades-content">
+            <h1>Curiosidades</h1>
+            <p class="description">Algumas curiosidades sobre mim.</p>
+            <div class="grid-curiosidades">
+                <article>
+                    <h2>Adiantado no colégio.</h2>
+                    <p>Meus pais me colocaram para estudar muito novo, com apenas 2 anos de idade, devido isso sempre fui o mais novo da minha sala. Sob esse viés irei ingressar na faculdade muito novo, com apenas 17 anos.</p>
+                </article>
+                
+                <article>
+                    <h2>Do Front ao Backend</h2>
+                    <p>Quando comecei a estudar programação pela primeira vez me interessei mais pelo frontend, no entanto quando voltei a estudar perdi todo interesse, e me voltei apenas para o backend, embora agora eu esteja estudando o front novamente.</p>
+                </article>
+                
+                <article>
+                    <h2>Federal não é meu foco</h2>
+                    <p>Embora eu queira passar na UFPA, para ter a moral de ter passado em uma federal, meu desejo maior é passar na UEPA, em Engenharia de Software. Não é meu foco pelo fato de eu ter me escrito em um curso que não possui um bom feedback, Engenharia da Computação.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

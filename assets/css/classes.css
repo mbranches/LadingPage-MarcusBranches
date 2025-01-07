@@ -1,0 +1,22 @@
+.main-bg {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-bg {
+    background-color: white;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.description {
+    font-style: italic;
+}

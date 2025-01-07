@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-default);
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+h1 {
+  font-size: 5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.section h1 {
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 690px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}

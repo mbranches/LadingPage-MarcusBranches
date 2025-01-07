@@ -1,0 +1,34 @@
+.intro-content {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.intro-image {
+    grid-template-rows: span 2;
+}
+
+.intro-image img {
+    max-width: 100%;
+}
+
+@media (max-width:760px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        top: -7rem;
+    }
+
+    .intro-image {
+        display: none;
+    }
+}
+
