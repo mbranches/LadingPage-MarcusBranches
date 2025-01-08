@@ -27,6 +27,8 @@
     flex-direction: column;
     font-size: 2rem;
     text-transform: uppercase;
+    position: relative;
+    text-decoration: underline;
 }
 
 .menu-content a {
@@ -37,6 +39,7 @@
     display: block;
     position: relative;
     padding: 1.5rem;
+    color: var(--menu-color);
 }
 
 .menu-content ul li a::after {
@@ -63,25 +66,45 @@
 }
 
 @media (max-width:760px) {
+
     .menu {
         bottom: 0;
-        text-align: center;
+        text-align: left;
         display: none;
+        width: 100%;
+        border-right: 0.1rem solid #d1d0d0;
+        background: rgba(0, 0, 0, 0.7);
     }
     
-    .menu-content, .menu-content ul {
+    .menu-content {
+        margin: 0 0 0 -2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        background-color: white;
+        text-align: left;
+        border-top-right-radius: 0.5rem;
+        padding-top: 10rem;
+    }
+    
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .menu-content h1 {
-        padding-bottom: 4rem;
-        font-size: 4rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
     }
     
     .menu-content ul li {
-        padding: 2rem;
-        font-size: 2.3rem;
+        padding: 2rem 2rem 1rem 0;
+        padding-left: 0;
+        font-size: 2rem;
+    }
+    
+    .menu-content ul li a{
+        padding-left: 0;
     }
     
     .menu-content {
@@ -92,14 +115,16 @@
         content: '≡';
         position: fixed;
         top: 2rem;
-        right: 2rem;
+        left: 2rem;
         background-color: var(--primary-color);
         color: white;
         width: 3rem;
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.5rem 0.8rem;
         cursor: pointer;
         z-index: 2;
+        font-size: 2.5rem;
+        border: 0.1rem solid #eee;
     }
 
     .close-menu:checked ~ .menu {
@@ -113,5 +138,61 @@
 
     .menu-spacing {
         display: none;
+    }
+}
+
+@media (max-width:650px) {
+    .menu-content {
+        width: 60%;
+    }
+
+    .menu-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-content ul li {
+        padding-top: 1rem;
+        padding-bottom: 0;
+        font-size: 1.8rem;
+    }
+
+    .close-menu-label::after {
+        padding: 0.5rem 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu-content h1 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-content ul li {
+        padding-top: 0rem;
+        padding-bottom: 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:320px) {
+    .menu-content {
+        padding-top: 0;
+        width: 100%;
+        margin: auto;
+        border-top-right-radius: 0;
+        justify-content: center;
+    }
+
+    .menu-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-content ul li {
+        padding-top: 1rem;
+        padding-bottom: 0;
+        font-size: 1.8rem;
     }
 }
