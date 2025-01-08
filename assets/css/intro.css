@@ -23,12 +23,16 @@
 
 @media (max-width:760px) {
     .intro-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         top: -7rem;
     }
 
     .intro-image {
-        display: none;
+        display: block;
+        position: absolute;
+        width: 50%;
+        right: 0rem;
+        bottom: -5rem;
     }
 }
 
