@@ -14,9 +14,15 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 15rem var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .description {
     font-style: italic;
+}
+
+@media (max-height:650px) {
+    .main-content {
+        padding: 150px var(--gap);
+    }
 }
